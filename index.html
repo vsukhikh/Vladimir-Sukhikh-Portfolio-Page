@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Page">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        // Smooth scroll when clicking on anchor links
+        document.addEventListener("DOMContentLoaded", function() {
+            var anchorLinks = document.querySelectorAll('a[href^="#"]');
+            var menuHeight = 90; // Adjust this value based on your menu's height
+
+            for (var i = 0; i < anchorLinks.length; i++) {
+                anchorLinks[i].addEventListener("click", function(e) {
+                    e.preventDefault();
+                    var targetElement = document.querySelector(this.getAttribute("href"));
+
+                    // Calculate the target scroll position by subtracting the menu height
+                    var scrollPosition = targetElement.offsetTop - menuHeight;
+
+                    // Scroll to the target position
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: "smooth"
+                    });
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/"><h3 style="font-weight: 700;">VSUKHIKH</h3></a></li>
+            <h3 style="margin-left: 100px">Open for work!</h3>
+        </ul>
+        <ul>
+            <li><a href="#projects"><h3 class="link link--metis">Projects</h3></a></li>
+            <li><a href="#contacts"><h3 class="link link--metis">Contacts</h3></a></li>
+            <div class="button-header" style="margin-left: 40px;"><a href="mailto:hello@vsukhikh.dev"><h3 class="animated-underline">hello@vsukhikh.dev</h3></a></div>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>VLADIMIR SUKHIKH<br>WEB DEVELOPER</h1>
+        <h2>Results-driven Web Developer with experience in creating responsive and user-friendly websites</h2>
+        <div class="button"><a href="mailto:hello@vsukhikh.dev"><h3>hello@vsukhikh.dev</h3></a></div>
+    </section>
+    <section id="projects">
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <h3>Selected work</h3>
+            <h3>Discover ↓</h3>
+        </div>
+        <div class="project-tile">
+            <div class="text-img-wrap">
+                <h2 class="text-img">XDevelop</h2>
+                <h3 class="text-img">Digital Agency in Vancouver</h3>
+                <div class="services">
+                    <div class="services-item">Design</div>
+                    <div class="services-item">Developing</div>
+                    <div class="services-item">SEO</div>
+                    <div class="services-item">CMS</div>
+                    <div class="services-item">Analytics</div>
+                </div>
+                <h4 class="text-img">Developed and maintained responsive website using HTML, CSS, and JavaScript. Collaborated with UX/UI designers to ensure a seamless user experience.</h4>
+            </div>
+            <div class="img-wrap"><img class="project-img" src="Thrive-club-mockup.png"></div>
+        </div>
+        <div class="project-tile">
+            <div class="img-wrap"><img class="project-img" src="Thrive-club-mockup.png"></div>
+            <div class="text-img-wrap right-side">
+                <h2 class="text-img">Thrive Club</h2>
+                <h3 class="text-img">Business Club in Vancouver</h3>
+                <div class="services">
+                    <div class="services-item">Design</div>
+                    <div class="services-item">Developing</div>
+                    <div class="services-item">SEO</div>
+                    <div class="services-item">CMS</div>
+                    <div class="services-item">Analytics</div>
+                </div>
+                <h4 class="text-img">Developed and maintained responsive website using HTML, CSS, and JavaScript. Collaborated with UX/UI designers to ensure a seamless user experience.</h4>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Looking to grow in IT sphere in Vancouver, BC</h2>
+        <h2>My resume you can <a class="button-header" href="">download here</a></h2>
+        <div class="button"><a href="mailto:hello@vsukhikh.dev"><h3>hello@vsukhikh.dev</h3></a></div>
+    </section>
+    <footer>
+        <div class="h1">VLADIMIR SUKHIKH<br>WEB DEVELOPER</div>
+        <div id="footer">
+            <div class="link-wrap">
+                <a class="profile-link" id="profile-link" target="_blank" href="https://github.com/vsukhikh"><h3 class="link link--metis">GitHub</h3></a>
+                <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/vsukhikh/"><h3 class="link link--metis">LinkedIn</h3></a>
+            </div>
+            <h3>Copyright ©Vladimir Sukhikh 2023</h3>
+        </div>
+    </footer>
+</body>
+</html>
