@@ -35,7 +35,7 @@ h4 {
 }
 
 body {
-    margin: auto 60px;
+    margin: auto;
     box-sizing: inherit;
 }
 
@@ -255,6 +255,18 @@ h4.text-img {
 /*@media screen and (max-width: 459px) {*/
 
 /*}*/
+
+@media screen and (min-width: 1441px) {
+    body {
+        width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        margin: auto 60px;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     h1,
