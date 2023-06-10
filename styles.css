@@ -393,6 +393,15 @@ h4.text-img {
     #footer {
         flex-direction: column;
     }
+
+    .button > a > h3 {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 0px 30px;
+        height: 48px;
+    }
 }
 
 @media screen and (max-width: 460px) {
