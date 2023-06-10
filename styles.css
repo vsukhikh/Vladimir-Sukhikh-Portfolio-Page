@@ -399,7 +399,7 @@ h4.text-img {
     }
 
     .button {
-        padding: 0px 30px;
+        padding: 0px 25px;
         height: 48px;
     }
 }
@@ -442,11 +442,6 @@ h4.text-img {
         gap: 30px;
     }
 
-    .button {
-        padding: 0px 25px;
-        height: 48px;
-    }
-
     .project-tile {
         flex-direction: column;
         margin-bottom: 60px;
@@ -458,5 +453,14 @@ h4.text-img {
 
     h4.text-img {
         width: 100%;
+    }
+
+    .button > a > h3 {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 0px 15px;
+        height: 40px;
     }
 }
